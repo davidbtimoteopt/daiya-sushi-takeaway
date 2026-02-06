@@ -66,6 +66,21 @@ header h1 {
     margin-bottom: 50px;
 }
 
+@media (max-width: 600px) {
+    .left {
+        height: 30%;
+        left: -10%;
+        opacity: 0.5;
+    }
+
+    .right {
+        height: 30%;
+        left: -10%;
+        opacity: 0.5;
+    }
+
+}
+
 .most-ordered {
     text-align: center;
     margin-bottom: 5px;
