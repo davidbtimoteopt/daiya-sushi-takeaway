@@ -68,20 +68,20 @@ header h1 {
 
 @media (max-width: 600px) {
     .header-img {
-        height: 35%;
-        opacity: 0.4;
+        height: 30%;
+        opacity: 0.5;
     }
 
     .left {
-        left: -5%;
+        left: 0%;
         right: auto;
         top: 20%;
     }
 
     .right {
-        right: -5%;
+        right: 0%;
         left: auto;
-        top: 70%;
+        top: 5%;
     }
 
     header h1 {
