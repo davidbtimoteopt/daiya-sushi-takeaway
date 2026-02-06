@@ -71,12 +71,14 @@ header h1 {
         height: 30%;
         left: -10%;
         opacity: 0.5;
+        margin-top: 50px;
     }
 
     .right {
         height: 30%;
-        left: -10%;
+        right: -10%;
         opacity: 0.5;
+        margin-top: 150px;
     }
 
 }
