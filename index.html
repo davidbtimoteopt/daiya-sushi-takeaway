@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Daiya - Take Away</title>
+</head>
+<body>
+    <header>
+        <img src="images/hosomaki-stick-no-bg.png" class="header-img left" alt="sushi-left">
+        <img src="images/niguiri-stick-no-bg.png" class="header-img right" alt="sushi-right">
+        <div class="head-content">
+            <h1>Daiya<br>Take-Away</h1>
+            <p>Peça aqui para buscar no restaurante</p>
+            <p><i>Para entregas utilize a Glovo ou Uber Eats</i></p>
+            <p>Mínimo 30 min de preparação</p>
+            <p>Horário de funcionamento</p>
+            <p>Terça a Domingo | 12:00 - 15:00 e 19:00 - 22:30</p>
+        </div>
+    </header>
+
+    <div class="most-ordered">
+        <h3>Mais pedidos</h3>
+    </div>
+    <main id="menu-container">
+        <div class="menu-item" data-name="Box 1" data-price="20.49">
+            <h2>Box 1</h2>
+            <p>16 peças do chef<br>4 gyozas<br>4 hot rolls</p>
+            <p><strong>€20,49</strong></p>
+            <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+
+        <div class="menu-item" data-name="Box 2" data-price="28.49">
+            <h2>Box 2</h2>
+            <p>25 peças do chef<br>4 gyozas<br>4 hot rolls</p>
+            <p><strong>€28,49</strong></p>
+            <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+
+        <div class="menu-item" data-name="Box 3" data-price="47.99">
+            <h2>Box 3</h2>
+            <p>50 peças do chef<br>8 gyozas<br>8 hot rolls</p>
+            <p><strong>€47,99</strong></p>
+            <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+
+        <div class="menu-item" data-name="Menu Amigos" data-price="98.49">
+            <h2>Menu amigos</h2>
+            <p>75 peças do chef<br>8 gyozas<br>1 tártaro de salmão<br>
+                4 camarões tempura<br>2 garrafas de vinho</p>
+            <p><strong>€98,49</strong></p>
+            <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+
+        <div class="menu-item" data-name="Menu criança" data-price="13.99">
+            <h2>Menu criança</h2>
+            <p>6 hosomakis<br>4 niguiris<br>5 sashimis de salmão</p>
+            <p><strong>€13,99</strong></p>
+            <select class="item-variant">
+                <option value="">Escolha a opção</option>
+                <option value="Salmão">Salmão</option>
+                <option value="Manga">Manga</option>
+                <option value="Pepino">Pepino</option>
+                <option value="Abacate">Abacate</option>
+            </select>
+            <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+        <div class="menu-item" data-name="Yakisoba" data-price="16.49">
+            <h2>Yakisoba</h2>
+            <p>Camarão, frango ou vegetariano</p>
+            <p><strong>€16,49</strong></p>
+            <select class="item-variant">
+                <option value="">Escolha o sabor</option>
+                <option value="Camarão">Camarão</option>
+                <option value="Frango">Frango</option>
+                <option value="Vegetariano">Vegetariano</option>
+            </select>
+            <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+        
+        </main>
+
+    <section id="cart-section">
+        <h3>Carrinho:
+            <span id="cart-item-qt">0</span>
+        </h3>
+        <ul id="cart-list">
+            </ul>
+        
+        <div id="observations-container">
+            <label for="order-notes">Observações</label><br>
+        <textarea id="order-notes" placeholder="Ex: Alergia a frutos secos, etc..." rows="5"></textarea>
+        </div><br>
+
+        
+        <div id="pickup-container">
+            <label for="pickup-time">Horário de levantamento</label><br>
+            <select id="pickup-time">
+                <option value="30 min">Assim que possível (30 min)</option>
+                <option value="45 min">45 min</option>
+                <option value="1 hora">1 hora</option>
+                <option value="custom">Marcar pra mais tarde (especificar nas observações acima)</option>
+            </select>
+        </div><br>
+        
+        <div id="customer-data">
+            <label for="customer-name">Nome</label><br>
+        <textarea id="customer-name" placeholder="Digite seu nome..." rows="1"></textarea>
+        </div>
+
+        <h3>Total: <span id="cart-total">€ 0,00</span></h3>
+        <button onclick="sendOrderViaWhatsApp()" id="send-whatsapp-btn">Enviar pedido por WhatsApp</button>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
